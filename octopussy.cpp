@@ -8,13 +8,18 @@
 #include <string>
 #include <iostream>
 #include <ctime>
-#include <fstream>
+
 
 
 #include "vix.h"
 #include "vm_basic_types.h"
 
+#define USERNAME "fuzzbox__"
+#define PASSWORD "admin"
+#define VM_HANDLE_ARRAY_SIZE 32
 
+#define glogfile "c:\\secret"   // Guest log file location
+#define  hlogfile "c:\\secret" //Host log file location
 using namespace std;
 
 VixError err = VIX_OK;
@@ -318,8 +323,8 @@ void main()
 								string clone_vm_i;
 								int input_main;
 								printf("Select 1 to control existing Virtual machines on VMware Workstation. \n");
-								printf("Select 3 to clone  Virtual machines on VMware Workstation.\n");
-								printf("Select 4 to list active Virtual Machines on local Host.\n");
+								printf("Select 2 to clone  Virtual machines on VMware Workstation.\n");
+								printf("Select 3 to list active Virtual Machines on local Host.\n");
 
 								printf("Enter:");
 
@@ -330,8 +335,8 @@ void main()
 								case 1:
 																vmware();
 																break;
-				
-								case 3:
+
+								case 2:
 																printf("Available VMimage to clone %s .\n", vm1);
 																printf("Select 'y' to continue \n");
 																printf("Enter:");
@@ -342,7 +347,7 @@ void main()
 																								clone_vm();
 																}
 																break;
-								case 4:
+								case 3:
 																jobHandle = VixHost_Connect(VIX_API_VERSION, VIX_SERVICEPROVIDER_VMWARE_WORKSTATION, NULL, 0, NULL, NULL, 0, VIX_INVALID_HANDLE, NULL, NULL);
 																err = VixJob_Wait(jobHandle, VIX_PROPERTY_JOB_RESULT_HANDLE, &hostHandle, VIX_PROPERTY_NONE);
 																vm_err();
