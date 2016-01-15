@@ -1,0 +1,19 @@
+VmWare Vix Api based fuzzer distribution program
+
+The VIX API allows you to automate virtual machine operations on VMware Workstation, VMware Server, ESX/ESXi hosts, and VMware vSphere.
+
+About the VIX API
+
+The VIX API (or “Vix”) is a library for writing scripts and programs to manipulate virtual machines. It is high-level, easy to use, and practical for both script developers and application programmers. The VIX API is designed for three kinds of users:
+
+Technically Adventurous Users – For example, dedicated IT personnel in an organization building their own in-house tools.
+Partners – Software vendors using Vix to integrate VMware products with their own products or to build management products specifically for virtual machines.
+VMware Engineering – VMware uses Vix in its own products as a general abstraction layer between core virtual machine processes and associated service processes.
+The VIX API runs on Microsoft Windows (Windows95 or later) and Linux platforms (kernel 2.4.x or later recommended). It supports programs written in C, Perl, and COM (Visual Basic, VBscript, C#).
+
+Compatibility
+
+This release of the VIX API is compatible with VMware Workstation, VMware Server, and ESX/ESXi hosts.
+
+
+https://www.vmware.com/support/developer/vix-api/vix16_reference/

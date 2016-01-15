@@ -319,7 +319,7 @@ void vmware()//exsi input
 
 void main()
 {
-								printf("\t\t\t Octopussy VMware Fuzzer Distrubtion \n\t\t\t   Hydra \n");
+								printf("\t\t\t Octopussy VMware Fuzzer Distribution \n\t\t\t   Hydra \n");
 								string clone_vm_i;
 								int input_main;
 								printf("Select 1 to control existing Virtual machines on VMware Workstation. \n");
