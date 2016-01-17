@@ -1,10 +1,10 @@
 
 
-#pragma once
+//#pragma once
 
 
 #include <stdio.h>
-#include <tchar.h>
+//#include <tchar.h>
 #include <string>
 #include <iostream>
 #include <ctime>
@@ -34,16 +34,17 @@ int isLoggedIn = 0;
 int vmHandleIndex = 0;
 int totalVMCount = 0;
 int num_vms_clone;
-void escape_vm()
+/*void escape_vm()
 {
 								exit(EXIT_FAILURE);
 }
+*/
 void vm_err()
 {
 
 								if (VIX_OK != err)
 								{
-																cout << "Error:__" << dec << err << "  __Reffrence" << vXerr << endl;
+													//			cout << "Error:__" << dec << err << "  __Reffrence" << vXerr << endl;
 
 																Vix_ReleaseHandle(jobHandle);
 																Vix_ReleaseHandle(vmHandle);
