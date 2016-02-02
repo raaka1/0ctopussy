@@ -14,6 +14,7 @@
 #include "vix.h"
 #include "vm_basic_types.h"
 
+#define master //add path for the master vm copy 
 #define USERNAME "fuzzbox__"
 #define PASSWORD "admin"
 #define VM_HANDLE_ARRAY_SIZE 32
@@ -168,7 +169,7 @@ void vmware()//exsi input
 								cin >> input;
 
 
-								if (input == "a"||"b"||"c") //1
+								if (input == "a"||"b"||"c"||"d"||"e"||"f") //1
 								{
 																jobHandle = VixVM_Open(hostHandle, vm1, NULL, NULL);
 																err = VixJob_Wait(jobHandle, VIX_PROPERTY_JOB_RESULT_HANDLE, &vmHandle, VIX_PROPERTY_NONE);
